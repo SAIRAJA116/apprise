@@ -18,10 +18,14 @@ def index(request):
             email = request.POST.get("email")
             password = request.POST.get("password")
             name = request.POST.get("name")
+            print(email)
+            print(email[0])
+            print(email[0].upper())
             try:
                 colors = ['red','Green','blue','vilot','purple','brown','orange',"#dca50a",'#b10f53',"#437807"]
                 i=int(random.random()*10)
                 color = colors[i]
+                print(color)
                 user = NewUser(email = email,name=name,password = make_password(password),color = color,avatar = email[0].upper())
                 user.save()
                 login(request,user)

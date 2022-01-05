@@ -7,6 +7,11 @@
     background: linear-gradient(to bottom, #024cdf 0%, #5dbcfb 114%);
     height:70px;
 }
+
+.welcomenote{
+    display: inline;
+}
+
 .btn1{
     background-color: white;
     color:#003399;
@@ -91,6 +96,7 @@
     .bg-light{
         height:60px;
     }
+
 }
 @media  screen and (max-width:576px) {
     .modal{
@@ -111,5 +117,10 @@
     .btn4{
         font-size: 12px;
     }
+
+    .welcomenote{
+        display: none;
+    }
+    
     
 }
