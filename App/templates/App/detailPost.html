@@ -22,10 +22,10 @@
 <body>
 
     <nav class="navbar sticky-top navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1"><a href="{% url 'App:index' %}" style="color: black;"
+        <span class="navbar-brand mb-0 h1"><a href="{% url 'App:index' %}" style="color: white;"
                 class="text-decoration-none">Apprise!</a></span>
         <span class="nav-item mr-auto">
-            <a href="{% url 'App:grouplist' %}" style="color:black"
+            <a href="{% url 'App:grouplist' %}" style="color:rgb(236, 236, 236)"
                 class="text-decoration-none nav-link">Materials&Syllabus</a>
         </span>
         <span class="float-end">
@@ -34,7 +34,7 @@
                 class="btn btn-outline-dark text-decoration-none">Logout</a>
             <p style="font-size: 12px; display: inline;">Welcome , {{request.user.name}}</p>
             {% else %}
-            <button id="modal-trigger" type="button" class="btn btn-outline-dark text-decoration-none"
+            <button id="modal-trigger" type="button" class="btn1 btn-outline-dark text-decoration-none"
                 data-toggle="modal" data-target="#loginmodal" onclick="resetform()">Login</button>
             {% endif %}
         </span>
@@ -52,14 +52,14 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content float-right mr-2 ">
                 <div><button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true" style="color: red; margin:5px;">&times;</span>
                     </button></div>
 
                 <div class="modal-body">
                     <div class="form-toggle d-flex justify-content-around">
-                        <button class="btn btn-outline-dark" style="width: 45%;" id="login-toggle"
+                        <button class="btn2 btn-outline-dark" style="width: 35%;" id="login-toggle"
                             onclick="toggleLogin()">Sign in</button>
-                        <button class="btn btn-outline-dark" style="width: 45%;" id="signup-toggle"
+                        <button class="btn2 btn-outline-dark" style="width: 35%;" id="signup-toggle"
                             onclick="toggleSignup()">sign
                             up</button>
                     </div>
@@ -72,8 +72,9 @@
                                 required />
                             <input class="form-control mb-2" type="password" name="password"
                                 placeholder="Enter password" required />
-                            <button style="width: 100%;" type="submit" class="btn btn-primary mb-2 login float-end">Sign
-                                in</button>
+                                <center>
+                            <button style="width: 40%;" type="submit" class="btn3 btn-primary mb-2 login float-end">Sign
+                                in</button></center>
                             <hr />
 
                         </form>
@@ -89,8 +90,9 @@
                                 required />
                             <input class="form-control mb-2" type="password" name="password"
                                 placeholder="Create password" required />
-                            <button style="width: 100%;" type="submit" class="btn btn-primary mb-2 signup">create
-                                account</button>
+                            <center>
+                            <button style="width: 40%;" type="submit" class="btn3 btn-primary mb-2 signup">create
+                                account</button></center>
 
                             <hr />
                         </form>
@@ -119,7 +121,7 @@
     </div>
     <hr>
     <div class="container">
-        <h5>Make you comment here</h5>
+        <h6>Make you comment here</h6>
         <div>
 
 
@@ -130,9 +132,9 @@
                     placeholder="write your comment here" required></textarea>
                 <div class="d-flex justify-content-end">
                     {% if request.user.is_authenticated %}
-                    <button class="btn btn-primary" style="display: block;" type="submit">Submit</button>
+                    <button class="btn4 btn-primary" style="display: block;" type="submit">Submit</button>
                     {% else %}
-                    <button type="button" class="btn btn-primary"
+                    <button type="button" class="btn4 btn-primary"
                         onclick="document.getElementById('modal-trigger').click() ">Submit</button>
                     {% endif %}
                 </div>
@@ -163,7 +165,7 @@
 
 
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" style="font-size: 12px;">
                         <p>{{comment.comment}}</p>
                     </div>
                 </div>
