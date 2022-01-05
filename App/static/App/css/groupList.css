@@ -3,9 +3,32 @@
     margin: 0;
     box-sizing: border-box;
 }
+.bg-light{
+    background: linear-gradient(to bottom, #024cdf 0%, #5dbcfb 114%);
+    height:70px;
+}
 
+.card{
+    border-color: transparent;
+    margin:10px;
+}
+.card-body{
+    border-color: transparent;
+    box-shadow: 3px 3px 10px rgba(34, 31, 37, 0.2);
+}
 .actualcontainer{
     font-family: 'Nunito';
     font-size: 16px;
+}
+@media screen and (max-width:568px) {
+    .bg-light{
+        height:60px;
+    }
+    .nav-link{
+        font-size: 12px;
+    }
+    .card{
+        margin-top: 1px;
+    }
 }
 

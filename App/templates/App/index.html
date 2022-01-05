@@ -23,7 +23,7 @@
     <nav class="navbar sticky-top navbar-light bg-light">
         <span class="navbar-brand mb-0 h1" style="color:white;">Apprise!</span>
         <span class="nav-item mr-auto">
-            <a href="{% url 'App:grouplist' %}" style="color:rgb(184, 184, 184); margin-top: 5px; font-weight: bold;"
+            <a href="{% url 'App:grouplist' %}" style="color:rgb(230, 230, 230); margin-top: 5px; font-weight: bold;"
                 class="text-decoration-none nav-link">Materials&Syllabus</a>
         </span>
         <span class="float-end">
@@ -51,14 +51,14 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content float-right mr-2 ">
                 <div><button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true" style="padding:10px;">&times;</span>
+                        <span aria-hidden="true" style="margin:5px; color: red;">&times;</span>
                     </button></div>
 
                 <div class="modal-body">
                     <div class="form-toggle d-flex justify-content-around">
-                        <button class="btn2 btn-outline-dark" style="width: 45%;" id="login-toggle"
+                        <button class="btn2 btn-outline-dark" style="width: 35%;" id="login-toggle"
                             onclick="toggleLogin()">Sign in</button>
-                        <button class="btn2 btn-outline-dark" style="width: 45%;" id="signup-toggle"
+                        <button class="btn2 btn-outline-dark" style="width: 35%;" id="signup-toggle"
                             onclick="toggleSignup()">sign
                             up</button>
                     </div>
@@ -72,7 +72,7 @@
                             <input class="form-control mb-2" type="password" name="password"
                                 placeholder="Enter password" required />
                             <center><button style="width: 40%;" type="submit"
-                                    class="btn2 btn-primary mb-2 login float-end">Sign
+                                    class="btn3 btn-primary mb-2 login float-end">Sign
                                     in</button></center>
                             <hr />
 
@@ -89,8 +89,8 @@
                                 required />
                             <input class="form-control mb-2" type="password" name="password"
                                 placeholder="Create password" required />
-                            <button style="width: 100%;" type="submit" class="btn btn-primary mb-2 signup">create
-                                account</button>
+                        <center>
+                            <button style="width: 40%;" type="submit" class="btn3 btn-primary mb-2 signup">create account</button></center>
 
                             <hr />
                         </form>

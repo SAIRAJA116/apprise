@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 .bg-light{
-    background: linear-gradient(to bottom, #003399 0%, #0099ff 114%);
+    background: linear-gradient(to bottom, #024cdf 0%, #5dbcfb 114%);
+    height:70px;
 }
 .btn1{
     background-color: white;
@@ -12,33 +13,51 @@
     width:100px;
     border-radius: 20px;
     border-color: transparent;
-    padding:5px;
+    padding:3px;
 }
 .btn1:hover{
-    background: linear-gradient(to bottom, #003399 0%, #0099ff 114%);
+    background: linear-gradient(to bottom, #024cdf 0%, #5dbcfb 114%);
     color:white;
     border-color: transparent;
 }
 .btn2{
-    background-color: white;
-    color:#003399;
+    background: linear-gradient(to bottom, #024cdf 0%, #5dbcfb 114%);
+    background-color: #024cdf;
+    color:white;
     width:60px;
     border-radius: 20px;
-    border-color: #5d88df;
-    font-weight: bold;
-    padding:5px;
+    border-color: transparent;
+    padding:7px;
+    margin:10px;
 }
 .btn2:hover{
+    background-color: #5dbcfb;
+    color:white;
+    border-color: transparent;
+}
+.btn3{
+    background-color: white;
+    color:#003399;
+    width:100px;
+    border-radius: 20px;
+    border-color: #003399;
+    padding:5px;
+    margin-top: 20px;
+}
+.btn3:hover{
     background: linear-gradient(to bottom, #003399 0%, #0099ff 114%);
     color:white;
     border-color: transparent;
 }
+
 
 .post-title{
     font-family: 'Nunito';
     font-size: 22px;
 }
-
+.card-header{
+    background: linear-gradient(to bottom, #ffffff -30%, #81cafa 114%);
+}
 .post-description{
     font-family: 'Nunito';
     font-size: 16px;
@@ -49,11 +68,31 @@
     }
     .btn1{
         width:70px;
-        font-size: 12px;
-        padding: 2px;
+        font-size: 10px;
     }
     .navbar-brand{
-        font-size: 15px;
+        font-size: 18px;
     }
+}
+@media  screen and (max-width:576px) {
+    .modal{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .btn2{
+        padding:3px;
+
+    }
+    .btn3{
+        padding:3px;
+
+    }
+    .form-control{
+        font-size: 12px;
+    }
+    .btn4{
+        font-size: 12px;
+    }
+    
 }
 
